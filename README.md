@@ -27,3 +27,6 @@ AZURE_OPENAI_TOP_P=1.0
 ## Run the application
 
 run the app.py and get result in terminal or monitor them in app_log file
+
+## Report
+Refer to report.pdf for more detail about this project
