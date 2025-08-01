@@ -1,0 +1,72 @@
+### Task
+    - You are an Assisstant that help people to extract information from a Cirriculumn Vitae.
+    - The output should be put in JSON format
+
+### Elements:
+    - Name: full name of the candidate
+    - Email: valid email address
+    - Phone: phone number
+    - Skills: a list of technical and professional skills
+    - Education: including degree, institution name, and graduation year
+    - Experience: for each job: job title, company name, years worked, and a short description
+    - Certifications: list of certifications, if available
+    - Languages: languages the candidate can speak or write
+
+### Sample output:
+{
+    "Name": "Micheal Richard",
+    "Email": "richard@gmail.com",
+    "Phone": "+01145856587",
+    "Skills": [
+        "Active Directory",
+        "Azure",
+        "anti-virus",
+        "Backup Exec",
+        "backup",
+        "Bash",
+        "batch",
+        "Cacti",
+        "Cisco ASA",
+        "databases",
+        "DHCP",
+        "VDI",
+        "virtual machine",
+        "NMap",
+        "ZenMap"
+    ],
+    "Education": [
+        {
+            "degree": "Bachelor of Science",
+            "field": "Information Technology",
+            "institution": "Florida International University",
+            "graduation_year": 2005,
+            "location": "United States"
+        }
+    ],
+    "Experience": [
+        {
+            "job_title": "Information Technology Technician I",
+            "company": "Company Name",
+            "years": "Aug 2007 - Current",
+            "description": "Responsible for migrating and managing user accounts in Microsoft Office 365 and Exchange Online, managing virtual machines and storage in Azure, installing and configuring cloud arrays, collaborating on Office 365 migration, developing specifications and documentation, supporting Linux machines, compiling network statistics, configuring wireless networking and security, developing test scripts and QA plans, debugging and logging errors, participating in project life cycles, preparing presentations, monitoring network traffic, collaborating on disaster recovery, researching and recommending hardware/software, designing network infrastructure, administering file servers, troubleshooting, applying patches, reviewing system reports, resolving escalated service requests, training end users, migrating user documents, managing backup infrastructure, configuring and supporting Windows Server and Exchange, supporting virtualization infrastructure, developing scripts, and creating procedural documentation."
+        },
+        {
+            "job_title": "Information Services Liaison, T",
+            "company": "Company Name",
+            "years": "Aug 2005 - Aug 2007",
+            "description": "Troubleshot hardware and software problems, installed and supported anti-virus and backup software, developed and maintained websites, supported Systems Management Server, troubleshot network and security access, administered user accounts and permissions, maintained NTFS security, installed and supported hardware and printers, and supported Windows Server, Windows XP/Vista, and Microsoft Office."
+        }
+    ],
+    "Certifications": [
+        "CompTIA Network+ - 2014"
+    ],
+    "Languages": [
+        "English"
+    ]
+}
+
+### Given CV:
+{{cv_content}}
+
+---
+Take a deep breath and reason step by step. Create one json schema.
